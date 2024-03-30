@@ -285,7 +285,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.807, y: 1.527, z: -0.042}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 5489420301123707955}
   m_Father: {fileID: 5022107035683126663}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -304,6 +305,36 @@ MonoBehaviour:
   targetPoint: {fileID: 4003847397323391399}
   cameraLink: {fileID: 5022107036208467154}
   targetInSkyDistance: 100
+--- !u!1 &4736619284002701145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5489420301123707955}
+  m_Layer: 0
+  m_Name: Grenade Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5489420301123707955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4736619284002701145}
+  m_LocalRotation: {x: -0.258819, y: 0, z: 0, w: 0.9659259}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7757978327580566567}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!1 &5022107035683126661
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +349,7 @@ GameObject:
   - component: {fileID: 5022107035683126662}
   - component: {fileID: 2764475005266891160}
   - component: {fileID: 8301838695274721286}
+  - component: {fileID: 4468389711664629146}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -424,6 +456,22 @@ MonoBehaviour:
   valueRectTransform: {fileID: 6621871211813741186}
   gameplayUI: {fileID: 5677549494998471931}
   gameOverScreen: {fileID: 908202093791322276}
+--- !u!114 &4468389711664629146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5022107035683126661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3022c87c9e309b4f870272dec82862e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadePrefab: {fileID: 892590517088157583, guid: 5e287f359423fc5478a3ed90107f5603,
+    type: 3}
+  grenadeSourceTransform: {fileID: 5489420301123707955}
+  force: 500
 --- !u!1 &5022107036208467152
 GameObject:
   m_ObjectHideFlags: 0
